@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Audífonos Inalámbricos Aurora",
+    "description": "Audio de alta fidelidad con cancelación activa de ruido y hasta 30 horas de batería.",
+    "category": "Tecnología",
+    "price": 2499,
+    "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
+    "stock": 25,
+    "sku": "AUR-HEAD-01",
+    "isFeatured": true
+  },
+  {
+    "name": "Smartwatch Pulse X",
+    "description": "Monitorea tu salud, recibe notificaciones y controla tu música desde la muñeca.",
+    "category": "Tecnología",
+    "price": 3299,
+    "imageUrl": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+    "stock": 18,
+    "sku": "PULSE-SW-02",
+    "isFeatured": true
+  },
+  {
+    "name": "Sneakers Urban Flow",
+    "description": "Comodidad y estilo urbano con suela memory foam y materiales respirables.",
+    "category": "Moda",
+    "price": 1899,
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b",
+    "stock": 32,
+    "sku": "UFLOW-SNK-03",
+    "isFeatured": false
+  },
+  {
+    "name": "Backpack Explorer 35L",
+    "description": "Mochila resistente al agua con compartimiento para laptop y bolsillos secretos.",
+    "category": "Accesorios",
+    "price": 1499,
+    "imageUrl": "https://images.unsplash.com/photo-1476958526483-36efcaa80b1e",
+    "stock": 20,
+    "sku": "EXP-BKPK-04",
+    "isFeatured": false
+  },
+  {
+    "name": "Botella Térmica Horizon",
+    "description": "Mantiene tu bebida fría por 24h y caliente por 12h, libre de BPA.",
+    "category": "Hogar",
+    "price": 649,
+    "imageUrl": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51",
+    "stock": 40,
+    "sku": "HOR-BOT-05",
+    "isFeatured": false
+  },
+  {
+    "name": "Lámpara Smart Glow",
+    "description": "Controla el ambiente con luz regulable LED y compatibilidad con asistentes de voz.",
+    "category": "Hogar",
+    "price": 1199,
+    "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "stock": 28,
+    "sku": "SGL-ROOM-06",
+    "isFeatured": true
+  }
+]
