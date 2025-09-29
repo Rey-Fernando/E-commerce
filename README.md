@@ -46,6 +46,21 @@ npm run dev
 - API disponible en `http://localhost:4000/api`
 - Frontend en `http://localhost:5173`
 
+## Pruebas
+
+```bash
+# Ejecutar pruebas de backend
+cd server
+npm run test
+
+# Ejecutar pruebas de frontend
+cd ../client
+npm run test
+```
+
+- Usa `npm run test:watch` para modo interactivo en ambos proyectos.
+- `npm run test:ui` (frontend) abre la interfaz de Vitest.
+
 ## Flujo de pago
 
 1. El cliente crea un Payment Intent en `/api/payments/create-intent`.
@@ -73,5 +88,5 @@ Cliente (`client/.env`):
 
 - Implementar autenticación y panel de administración.
 - Manejar webhooks de Stripe para confirmar pagos asíncronos.
-- Añadir pruebas unitarias y de integración.
+- Automatizar las pruebas en CI/CD.
 - Desplegar en plataformas como Vercel (frontend) y Render/Fly.io (backend).
