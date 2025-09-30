@@ -23,7 +23,7 @@ function CartDrawer () {
 
         <div className="cart-items">
           {items.length === 0 && (
-            <p className="empty-cart">Tu carrito est· vacÌo</p>
+            <p className="empty-cart">Tu carrito est√° vac√≠o</p>
           )}
 
           {items.map(({ product, quantity }) => (
@@ -55,4 +55,4 @@ function CartDrawer () {
   )
 }
 
-export default CartDrawer
+export default CartDrawer

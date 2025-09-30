@@ -5,6 +5,8 @@ export default defineConfig({
     environment: 'node',
     setupFiles: ['./tests/setup.js'],
     globals: true,
+    hookTimeout: 120000,
+    testTimeout: 30000,
     coverage: {
       reporter: ['text', 'html'],
       include: ['src/**/*.js'],

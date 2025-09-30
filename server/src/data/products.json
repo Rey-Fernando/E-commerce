@@ -1,8 +1,8 @@
 [
   {
-    "name": "Audífonos Inalámbricos Aurora",
-    "description": "Audio de alta fidelidad con cancelación activa de ruido y hasta 30 horas de batería.",
-    "category": "Tecnología",
+    "name": "AudÃ­fonos InalÃ¡mbricos Aurora",
+    "description": "Audio de alta fidelidad con cancelaciÃ³n activa de ruido y hasta 30 horas de baterÃ­a.",
+    "category": "TecnologÃ­a",
     "price": 2499,
     "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
     "stock": 25,
@@ -11,8 +11,8 @@
   },
   {
     "name": "Smartwatch Pulse X",
-    "description": "Monitorea tu salud, recibe notificaciones y controla tu música desde la muñeca.",
-    "category": "Tecnología",
+    "description": "Monitorea tu salud, recibe notificaciones y controla tu mÃºsica desde la muÃ±eca.",
+    "category": "TecnologÃ­a",
     "price": 3299,
     "imageUrl": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
     "stock": 18,
@@ -40,8 +40,8 @@
     "isFeatured": false
   },
   {
-    "name": "Botella Térmica Horizon",
-    "description": "Mantiene tu bebida fría por 24h y caliente por 12h, libre de BPA.",
+    "name": "Botella TÃ©rmica Horizon",
+    "description": "Mantiene tu bebida frÃ­a por 24h y caliente por 12h, libre de BPA.",
     "category": "Hogar",
     "price": 649,
     "imageUrl": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51",
@@ -50,7 +50,7 @@
     "isFeatured": false
   },
   {
-    "name": "Lámpara Smart Glow",
+    "name": "LÃ¡mpara Smart Glow",
     "description": "Controla el ambiente con luz regulable LED y compatibilidad con asistentes de voz.",
     "category": "Hogar",
     "price": 1199,
@@ -59,4 +59,4 @@
     "sku": "SGL-ROOM-06",
     "isFeatured": true
   }
-]
+]

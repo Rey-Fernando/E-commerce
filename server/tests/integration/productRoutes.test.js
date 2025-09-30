@@ -22,9 +22,9 @@ describe('GET /api/products', () => {
     await Product.deleteMany({})
     await Product.insertMany([
       {
-        name: 'Audífonos Inalámbricos',
+        name: 'AudÃ­fonos InalÃ¡mbricos',
         description: 'Audio de alta fidelidad',
-        category: 'Tecnología',
+        category: 'TecnologÃ­a',
         price: 1999,
         imageUrl: 'https://example.com/headphones.jpg',
         stock: 10
@@ -40,21 +40,21 @@ describe('GET /api/products', () => {
     ])
   })
 
-  it('devuelve listado de productos y categorías', async () => {
+  it('devuelve listado de productos y categorÃ­as', async () => {
     const response = await request(app).get('/api/products')
 
     expect(response.status).toBe(200)
     expect(response.body.products).toHaveLength(2)
-    expect(response.body.categories).toEqual(expect.arrayContaining(['Tecnología', 'Moda']))
+    expect(response.body.categories).toEqual(expect.arrayContaining(['TecnologÃ­a', 'Moda']))
   })
 
-  it('filtra productos por categoría y búsqueda', async () => {
+  it('filtra productos por categorÃ­a y bÃºsqueda', async () => {
     const response = await request(app)
       .get('/api/products')
-      .query({ category: 'Tecnología', search: 'Audífonos' })
+      .query({ category: 'TecnologÃ­a', search: 'AudÃ­fonos' })
 
     expect(response.status).toBe(200)
     expect(response.body.products).toHaveLength(1)
-    expect(response.body.products[0].category).toBe('Tecnología')
+    expect(response.body.products[0].category).toBe('TecnologÃ­a')
   })
-})
+})

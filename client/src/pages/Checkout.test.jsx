@@ -25,9 +25,9 @@ describe('Checkout page', () => {
 
   const renderWithRouter = (ui) => render(<MemoryRouter>{ui}</MemoryRouter>)
 
-  it('avisa cuando el carrito está vacío', () => {
+  it('avisa cuando el carrito estÃ¡ vacÃ­o', () => {
     renderWithRouter(<Checkout />)
-    expect(screen.getByText('Tu carrito está vacío. Agrega productos para continuar.')).toBeInTheDocument()
+    expect(screen.getByText('Tu carrito estÃ¡ vacÃ­o. Agrega productos para continuar.')).toBeInTheDocument()
   })
 
   it('muestra el resumen de compra cuando hay productos', () => {
@@ -52,4 +52,4 @@ describe('Checkout page', () => {
     expect(screen.getByText('Botella Horizon x2')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /Pagar/ })).toBeDisabled()
   })
-})
+})

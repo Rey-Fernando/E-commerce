@@ -15,7 +15,7 @@ function OrderConfirmation () {
         const data = await fetchOrder(orderId)
         setOrder(data.order)
       } catch (err) {
-        setError('No encontramos tu orden, pero tu pago podría haber sido exitoso. Contacta soporte con tu comprobante.')
+        setError('No encontramos tu orden, pero tu pago podrÃ­a haber sido exitoso. Contacta soporte con tu comprobante.')
       } finally {
         setLoading(false)
       }
@@ -29,8 +29,8 @@ function OrderConfirmation () {
 
   return (
     <section className="card">
-      <h1>¡Gracias por tu compra!</h1>
-      <p>Tu número de orden es <strong>{order._id}</strong>.</p>
+      <h1>Â¡Gracias por tu compra!</h1>
+      <p>Tu nÃºmero de orden es <strong>{order._id}</strong>.</p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
         {order.items.map(item => (
@@ -47,10 +47,10 @@ function OrderConfirmation () {
         <strong>{formatCurrency(order.amount)}</strong>
       </div>
 
-      <p>Enviaremos una confirmación a <strong>{order.customer.email}</strong>.</p>
+      <p>Enviaremos una confirmaciÃ³n a <strong>{order.customer.email}</strong>.</p>
       <Link to="/" className="btn-primary" style={{ textAlign: 'center' }}>Seguir comprando</Link>
     </section>
   )
 }
 
-export default OrderConfirmation
+export default OrderConfirmation

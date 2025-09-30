@@ -20,14 +20,14 @@ describe('Catalog page', () => {
       products: [
         {
           _id: '1',
-          name: 'Audífonos Nova',
+          name: 'AudÃ­fonos Nova',
           description: 'Audio premium',
           price: 1999,
-          category: 'Tecnología',
+          category: 'TecnologÃ­a',
           imageUrl: ''
         }
       ],
-      categories: ['Tecnología'],
+      categories: ['TecnologÃ­a'],
       loading: false,
       error: null,
       setFilters: mockSetFilters,
@@ -37,16 +37,16 @@ describe('Catalog page', () => {
 
   it('muestra el listado de productos', () => {
     render(<Catalog />)
-    expect(screen.getByText('Audífonos Nova')).toBeInTheDocument()
+    expect(screen.getByText('AudÃ­fonos Nova')).toBeInTheDocument()
   })
 
   it('aplica filtros cuando el usuario busca', () => {
     render(<Catalog />)
 
     fireEvent.change(screen.getByPlaceholderText('Buscar productos...'), {
-      target: { value: 'audífonos' }
+      target: { value: 'audÃ­fonos' }
     })
 
     expect(mockSetFilters).toHaveBeenCalled()
   })
-})
+})

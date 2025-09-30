@@ -20,8 +20,8 @@ function Catalog () {
   return (
     <section>
       <header style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
-        <h1 style={{ marginBottom: 0 }}>Explora el cat·logo</h1>
-        <p style={{ color: '#6b7280', margin: 0 }}>Descubre productos seleccionados con envÌos a todo MÈxico.</p>
+        <h1 style={{ marginBottom: 0 }}>Explora el cat√°logo</h1>
+        <p style={{ color: '#6b7280', margin: 0 }}>Descubre productos seleccionados con env√≠os a todo M√©xico.</p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <input
             type="search"
@@ -50,4 +50,4 @@ function Catalog () {
   )
 }
 
-export default Catalog
+export default Catalog

@@ -26,7 +26,7 @@ describe('paymentController.createPaymentIntent', () => {
     expect(status).toHaveBeenCalledWith(400)
   })
 
-  it('crea un intent de pago cuando el payload es válido', async () => {
+  it('crea un intent de pago cuando el payload es vÃ¡lido', async () => {
     const json = vi.fn()
     const res = { json }
     const payload = {
@@ -46,4 +46,4 @@ describe('paymentController.createPaymentIntent', () => {
     })
     expect(json).toHaveBeenCalledWith({ clientSecret: 'secret_123' })
   })
-})
+})

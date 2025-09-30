@@ -9,7 +9,7 @@ function Header () {
     <header>
       <Link to="/" className="header-logo">Nova Shop</Link>
       <nav style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-        <Link to="/" className="btn-outline">Cat·logo</Link>
+        <Link to="/" className="btn-outline">Cat√°logo</Link>
         <Link to="/checkout" className="btn-outline">Checkout</Link>
         <button className="btn-primary" type="button" onClick={openCart}>
           Carrito ({totalItems})
@@ -19,4 +19,4 @@ function Header () {
   )
 }
 
-export default Header
+export default Header

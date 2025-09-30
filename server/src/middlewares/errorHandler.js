@@ -2,9 +2,9 @@ const errorHandler = (err, req, res, next) => { // eslint-disable-line no-unused
   console.error(err)
   const statusCode = err.statusCode || 500
   res.status(statusCode).json({
-    message: err.message || 'Algo salió mal',
+    message: err.message || 'Algo saliÃ³ mal',
     details: err.details || null
   })
 }
 
-export default errorHandler
+export default errorHandler

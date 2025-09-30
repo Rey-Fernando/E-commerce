@@ -66,7 +66,7 @@ function Checkout () {
         const response = await createPaymentIntent(payload)
         setClientSecret(response.clientSecret)
       } catch (err) {
-        setError('No se pudo inicializar el pago. Intenta m·s tarde.')
+        setError('No se pudo inicializar el pago. Intenta m√°s tarde.')
       } finally {
         setIntentLoading(false)
       }
@@ -128,14 +128,14 @@ function Checkout () {
       clearCart()
       navigate(`/orden-exitosa/${order._id}`)
     } catch (err) {
-      setError('No se pudo completar la orden. Revisa la informaciÛn e intenta de nuevo.')
+      setError('No se pudo completar la orden. Revisa la informaci√≥n e intenta de nuevo.')
     } finally {
       setLoading(false)
     }
   }
 
   if (!items.length) {
-    return <p>Tu carrito est· vacÌo. Agrega productos para continuar.</p>
+    return <p>Tu carrito est√° vac√≠o. Agrega productos para continuar.</p>
   }
 
   return (
@@ -147,17 +147,17 @@ function Checkout () {
           <input id="name" name="name" type="text" required value={customer.name} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="email">Correo electrÛnico</label>
+          <label htmlFor="email">Correo electr√≥nico</label>
           <input id="email" name="email" type="email" required value={customer.email} onChange={handleChange} />
         </div>
         <div>
-          <label htmlFor="phone">TelÈfono</label>
+          <label htmlFor="phone">Tel√©fono</label>
           <input id="phone" name="phone" type="tel" required value={customer.phone} onChange={handleChange} />
         </div>
 
-        <h2>DirecciÛn de envÌo</h2>
+        <h2>Direcci√≥n de env√≠o</h2>
         <div>
-          <label htmlFor="address">DirecciÛn</label>
+          <label htmlFor="address">Direcci√≥n</label>
           <input id="address" name="address" type="text" required value={customer.address} onChange={handleChange} />
         </div>
         <div style={{ display: 'flex', gap: '1rem' }}>
@@ -166,12 +166,12 @@ function Checkout () {
             <input id="city" name="city" type="text" required value={customer.city} onChange={handleChange} />
           </div>
           <div style={{ flex: 1 }}>
-            <label htmlFor="zip">CÛdigo postal</label>
+            <label htmlFor="zip">C√≥digo postal</label>
             <input id="zip" name="zip" type="text" required value={customer.zip} onChange={handleChange} />
           </div>
         </div>
 
-        <h2>MÈtodo de pago</h2>
+        <h2>M√©todo de pago</h2>
         <div style={{ padding: '1rem', border: '1px solid #e5e7eb', borderRadius: '12px', background: '#fff' }}>
           {intentLoading && <p>Preparando la pasarela de pago...</p>}
           <CardElement options={CARD_ELEMENT_OPTIONS} />
@@ -200,7 +200,7 @@ function Checkout () {
           <strong>{formatCurrency(cartSummary.subtotal)}</strong>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <span>EnvÌo</span>
+          <span>Env√≠o</span>
           <strong>{cartSummary.shipping === 0 ? 'Gratis' : formatCurrency(cartSummary.shipping)}</strong>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem' }}>
@@ -212,4 +212,4 @@ function Checkout () {
   )
 }
 
-export default Checkout
+export default Checkout

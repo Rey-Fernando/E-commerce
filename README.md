@@ -1,6 +1,6 @@
 # E-commerce Full Stack
 
-Aplicaci髇 de cat醠ogo con carrito, checkout y pasarela de pagos basada en React, Node.js y MongoDB.
+Aplicaci贸n de cat谩logo con carrito, checkout y pasarela de pagos basada en React, Node.js y MongoDB.
 
 ## Requisitos
 
@@ -8,7 +8,7 @@ Aplicaci髇 de cat醠ogo con carrito, checkout y pasarela de pagos basada en React
 - MongoDB 6+
 - Cuenta de Stripe (modo pruebas) para generar llaves `pk_test` y `sk_test`
 
-## Instalaci髇
+## Instalaci贸n
 
 ```bash
 # Cliente
@@ -21,7 +21,7 @@ cp .env.example .env
 cd ../server
 npm install
 cp .env.example .env
-# actualiza MONGODB_URI, STRIPE_SECRET_KEY y dem醩 variables
+# actualiza MONGODB_URI, STRIPE_SECRET_KEY y dem谩s variables
 ```
 
 ## Datos de ejemplo
@@ -31,7 +31,7 @@ cd server
 npm run seed
 ```
 
-## Ejecuci髇 en desarrollo
+## Ejecuci贸n en desarrollo
 
 ```bash
 # Terminal 1
@@ -69,24 +69,24 @@ npm run test
 
 ## Estructura principal
 
-- `client/`: Aplicaci髇 React con Zustand para el carrito y Stripe Elements.
-- `server/`: API Express con MongoDB y endpoints para productos, pagos y 髍denes.
+- `client/`: Aplicaci贸n React con Zustand para el carrito y Stripe Elements.
+- `server/`: API Express con MongoDB y endpoints para productos, pagos y 贸rdenes.
 - `server/src/scripts/seed.js`: script para poblar productos demo.
 
 ## Variables de entorno clave
 
 Servidor (`server/.env`):
 - `PORT`: puerto de Express.
-- `MONGODB_URI`: conexi髇 a MongoDB.
+- `MONGODB_URI`: conexi贸n a MongoDB.
 - `STRIPE_SECRET_KEY`: clave secreta Stripe.
 - `CLIENT_URL`: origen permitido para CORS.
 
 Cliente (`client/.env`):
-- `VITE_STRIPE_PUBLISHABLE_KEY`: clave p鷅lica Stripe.
+- `VITE_STRIPE_PUBLISHABLE_KEY`: clave p煤blica Stripe.
 
-## Pr髕imos pasos sugeridos
+## Pr贸ximos pasos sugeridos
 
-- Implementar autenticaci髇 y panel de administraci髇.
-- Manejar webhooks de Stripe para confirmar pagos as韓cronos.
+- Implementar autenticaci贸n y panel de administraci贸n.
+- Manejar webhooks de Stripe para confirmar pagos as铆ncronos.
 - Automatizar las pruebas en CI/CD.
-- Desplegar en plataformas como Vercel (frontend) y Render/Fly.io (backend).
+- Desplegar en plataformas como Vercel (frontend) y Render/Fly.io (backend).
